@@ -44,7 +44,7 @@ class InsertData:
     def retrieve_text_boxes(self):
         label_dict = dict()
         form = self.driver.find_element_by_xpath("//form[@id='userForm']")
-        labels = form.find_elements_by_tag_name("div")
+        labels = form.find_elements_by_xpath("div")
         for elem in labels:
             print(elem.get_attribute('id'))
 
